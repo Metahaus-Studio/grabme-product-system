@@ -5,16 +5,36 @@ export function ProductNav() {
         <a href="/" className="hover:text-[#7AC943]">
           <div>
             <p className="text-sm font-black">GRABME Product System</p>
-            <p className="text-xs text-white/40">Internal UX + MVP planning</p>
+            <p className="text-xs text-white/40">
+              Internal UX + MVP planning
+            </p>
           </div>
         </a>
 
         <nav className="hidden gap-5 text-sm text-white/70 md:flex">
-          <a href="/passenger" className="hover:text-white">Passenger</a>
-          <a href="/driver" className="hover:text-white">Driver</a>
-          <a href="/admin" className="hover:text-white">Admin</a>
-          <a href="/flow-map" className="hover:text-white">Flow Map</a>
-          <a href="/mvp-scope" className="hover:text-white">MVP Scope</a>
+          <a href="/passenger" className="hover:text-white">
+            Passenger
+          </a>
+
+          <a href="/driver" className="hover:text-white">
+            Driver
+          </a>
+
+          <a href="/admin" className="hover:text-white">
+            Admin
+          </a>
+
+          <a href="/flow-map" className="hover:text-white">
+            Flow Map
+          </a>
+
+          <a href="/mvp-scope" className="hover:text-white">
+            MVP Scope
+          </a>
+
+          <a href="/architecture" className="hover:text-white">
+            Architecture
+          </a>
         </nav>
       </div>
     </section>
