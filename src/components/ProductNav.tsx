@@ -35,6 +35,11 @@ export function ProductNav() {
           <a href="/architecture" className="hover:text-white">
             Architecture
           </a>
+
+          <a href="/app-showcase" className="hover:text-white">
+           App Showcase
+        </a>
+
         </nav>
       </div>
     </section>
