@@ -40,6 +40,10 @@ export function ProductNav() {
            App Showcase
         </a>
 
+        <a href="/driver-onboarding" className="hover:text-white">
+  Driver Onboarding
+</a>
+
         </nav>
       </div>
     </section>
