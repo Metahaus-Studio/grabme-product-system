@@ -6,7 +6,8 @@ const steps = [
     title: "Driver Sees Recruitment Poster",
     titleAr: "السائق يرى إعلان الانضمام",
     text: "Driver discovers GRABME through social media, referrals, or a QR recruitment poster.",
-    textAr: "يتعرّف السائق على GRABME من خلال السوشيال ميديا، الترشيحات، أو إعلان يحتوي على رمز QR.",
+    textAr:
+      "يتعرّف السائق على GRABME من خلال السوشيال ميديا، الترشيحات، أو إعلان يحتوي على رمز QR.",
     showPoster: true,
   },
   {
@@ -21,14 +22,16 @@ const steps = [
     title: "Complete Application",
     titleAr: "تعبئة الطلب",
     text: "Driver enters personal details, phone number, email address, and vehicle information.",
-    textAr: "يقوم السائق بإدخال المعلومات الشخصية، رقم الهاتف، البريد الإلكتروني، ومعلومات المركبة.",
+    textAr:
+      "يقوم السائق بإدخال المعلومات الشخصية، رقم الهاتف، البريد الإلكتروني، ومعلومات المركبة.",
   },
   {
     number: "04",
     title: "Upload Documents",
     titleAr: "رفع المستندات",
     text: "Driver uploads Driver License, National ID / Passport, and a Selfie photo.",
-    textAr: "يقوم السائق برفع رخصة القيادة، الهوية أو جواز السفر، وصورة شخصية للتحقق.",
+    textAr:
+      "يقوم السائق برفع رخصة القيادة، الهوية أو جواز السفر، وصورة شخصية للتحقق.",
   },
   {
     number: "05",
@@ -42,7 +45,8 @@ const steps = [
     title: "Admin Review",
     titleAr: "مراجعة الإدارة",
     text: "Operations team verifies documents, identity, and onboarding requirements.",
-    textAr: "يقوم فريق العمليات بمراجعة المستندات، التحقق من الهوية، والتأكد من متطلبات الانضمام.",
+    textAr:
+      "يقوم فريق العمليات بمراجعة المستندات، التحقق من الهوية، والتأكد من متطلبات الانضمام.",
   },
   {
     number: "07",
@@ -56,7 +60,8 @@ const steps = [
     title: "WhatsApp Notification",
     titleAr: "إشعار عبر واتساب",
     text: "Approved drivers receive a WhatsApp message from the GRABME team.",
-    textAr: "يتلقى السائقون المقبولون رسالة واتساب من فريق GRABME للخطوات التالية.",
+    textAr:
+      "يتلقى السائقون المقبولون رسالة واتساب من فريق GRABME للخطوات التالية.",
   },
   {
     number: "09",
@@ -103,7 +108,10 @@ export function DriverOnboardingFlow() {
 
                   <div>
                     <h3 className="text-2xl font-black">{step.title}</h3>
-                    <p dir="rtl" className="mt-1 text-lg font-bold text-white/70">
+                    <p
+                      dir="rtl"
+                      className="mt-2 text-xl font-bold text-[#7AC943]"
+                    >
                       {step.titleAr}
                     </p>
                   </div>
@@ -113,9 +121,23 @@ export function DriverOnboardingFlow() {
                   <div className="grid gap-8 lg:grid-cols-2">
                     <div>
                       <p className="max-w-4xl text-white/65">{step.text}</p>
-                      <p dir="rtl" className="mt-4 max-w-4xl text-right text-white/65">
+
+                      <p
+                        dir="rtl"
+                        className="mt-4 text-right text-base text-white/80"
+                      >
                         {step.textAr}
                       </p>
+
+                      <div className="mt-6 rounded-xl bg-black/40 p-4 text-center">
+                        <p className="text-xs text-white/50">
+                          Driver Recruitment URL
+                        </p>
+
+                        <p className="mt-1 font-bold text-[#7AC943]">
+                          grabmeapp.com/drivers
+                        </p>
+                      </div>
                     </div>
 
                     <div className="rounded-[2rem] border border-white/10 bg-black/40 p-4">
@@ -131,7 +153,10 @@ export function DriverOnboardingFlow() {
                 ) : (
                   <>
                     <p className="max-w-4xl text-white/65">{step.text}</p>
-                    <p dir="rtl" className="mt-4 max-w-4xl text-right text-white/65">
+                    <p
+                      dir="rtl"
+                      className="mt-4 max-w-4xl text-right text-white/65"
+                    >
                       {step.textAr}
                     </p>
                   </>
