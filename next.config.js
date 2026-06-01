@@ -1,12 +1,8 @@
-const repo = "grabme-product-system";
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}/`,
-  images: {
-    unoptimized: true,
-  },
+  basePath: "/grabme-product-system",
+  assetPrefix: "/grabme-product-system/",
 };
 
 module.exports = nextConfig;
